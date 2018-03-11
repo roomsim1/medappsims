@@ -15,6 +15,10 @@ router.get('/login', function(req, res){
 	res.render('login');
 });
 
+router.get('/profile', function(req, res){
+	res.render('profile');
+});
+
 // Register User
 router.post('/register', function(req, res){
 	var name = req.body.name;
