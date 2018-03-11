@@ -1,2 +1,54 @@
-<h2 class="page-header">profile</h2>
-<p>Welcome to your profile</p>
+<h2 class="page-header">Ethan</h2>
+
+    <form class="form-inline" action="index.html" method="post">
+        <div class="row">
+            <div class="form-group col-md-10">
+              <label for="medTime">Medication Times</label>
+              <input type="text" name="medTime" id="patientName" value="" placeholder="8am, 12pm, 5pm, etc.">
+            </div>
+            <div class="col-md-2">
+              <input class="btn btn-primary btn-add-time" type="submit" value="Add">
+            </div>
+        </div>
+      <!-- </div> -->
+    </form>
+    <!-- <div class="row"> -->
+    <div class="row">
+      <div class="col-xs-6">
+        <ul class="timeList">
+          <li>
+            <button class="btn btn-block btn-info" type="submit" value="8am" name="button">8am</button>
+          </li>
+          <li>
+            <button class="btn btn-block btn-info" type="submit" value="12pm" name="button">12pm</button>
+          </li>
+          <li>
+            <button class="btn btn-block btn-info" type="submit" value="5pm" name="button">5pm</button>
+          </li>
+        </ul>
+      </div>
+    <!-- </div> -->
+    <div class="col-xs-6">
+      <ul class="medList">
+        <li>
+          <form class="form-inline" action="index.html" method="post">
+            <div class="row">
+              <div class="col-xs-10">
+                <label for="medAdd" class="sr-only">Add Medicine</label>
+                <input type="text" name="AddMed" value="" id="medAdd" placeholder="Multi-vitamin, pain meds, ADHD meds, etc.">
+              </div>
+              <div class="col-xs-2">
+                <button class="btn btn-primary medAdd" type="submit" value="Add" name="addBtn">Add</button>
+              </div>
+            </div>
+          </form>
+        </li>
+        <li>
+          <button class="btn btn-block btn-info med-list-button" type="submit" value="Vicodin" name="button">Vicodin</button>
+        </li>
+        <li>
+          <button class="btn btn-block btn-info med-list-button" type="submit" value="Multi-vitamin" name="button">Multi-vitamin</button>
+        </li>
+      </ul>
+    </div>
+  </div>
