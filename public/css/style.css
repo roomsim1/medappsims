@@ -163,6 +163,28 @@ small {
   list-style: none;
 }
 
+.made-patient-list li {
+  margin-top: 5px;
+  margin-left: 60px;
+margin-right: -14px;
+}
+
+.made-patient-btn {
+  background-color: #fff;
+  color: #337ab7;
+}
+
+.made-patient-btn:hover {
+  background-color: #337ab7;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.made-patient-btn:active {
+  background-color: #337ab7;
+  color: #fff;
+}
+
 .medList {
   margin-top: 25px;
   list-style: none;
@@ -170,16 +192,18 @@ small {
 
 .medList li {
   margin-top: 5px;
+  margin-left: 0px;
 }
 
 .timeList {
   margin-top: 25px;
   list-style: none;
-  margin-left: -40px;
+  /* margin-left: -40px; */
 }
 
 .timeList li {
   margin-top: 5px;
+  margin-left: -40px;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
@@ -189,17 +213,46 @@ small {
 }
 
 #medAdd {
-  width: 173px;
+  width: 100%;
 }
 
-.medAdd {
+#medTime {
+  width: 100%;
+}
+
+/* .medAdd {
   margin: -3px 0px 5px -68px;
+} */
+
+/* .medAdd:active {
+  margin: -3px 0px 5px -68px;
+  border: 1px solid #337ab7;
+} */
+
+/* .btn-add-time {
+  margin-top: 22px;
 }
 
-.btn-add-time {
-  margin-top: 25px;
-}
+.btn-add-med {
+  margin-top: 22px;
+} */
 
 .med-list-button {
   width: 255px;
+  background-color: #fff;
+  color: #337ab7;
+}
+
+.med-list-button:hover {
+  width: 255px;
+  background-color: #337ab7;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    margin-right: 10px;
 }
