@@ -13,7 +13,6 @@ function addPatient(e) {
     var addInput = document.querySelector("#patientName").value;
     var clearInput = document.querySelector("#patientName").value = "";
 
-
     var patientLi = document.createElement("li");
     var patientBtn = document.createElement("button");
     patientBtn.classList.add("btn", "btn-block", "made-patient-btn");
@@ -26,9 +25,7 @@ function addPatient(e) {
         patientUl.appendChild(patientLi);
     }
    
-
     patientArrays.push(addInput);
-    console.log(patientArrays);
 
     patientLi.appendChild(patientBtn);
     patientBtn.innerHTML = addInput;
