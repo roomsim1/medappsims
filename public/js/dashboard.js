@@ -14,10 +14,13 @@ function addPatient(e) {
     var clearInput = document.querySelector("#patientName").value = "";
 
     var patientLi = document.createElement("li");
+    var patientForm = document.createElement("form");
     var patientBtn = document.createElement("button");
     patientBtn.classList.add("btn", "btn-block", "made-patient-btn");
     patientBtn.setAttribute("type", "submit");
     patientBtn.setAttribute("value", addInput);
+    patientForm.setAttribute("action", "users/profile/submit");
+    patientForm.setAttribute("method", "post");
 
     if (addInput === "") {
         alert("Oops, please type in a name.")
@@ -27,7 +30,8 @@ function addPatient(e) {
    
     patientArrays.push(addInput);
 
-    patientLi.appendChild(patientBtn);
+    patientLi.appendChild(patientForm);
+    patientForm.appendChild(patientBtn);
     patientBtn.innerHTML = addInput;
 }
 
