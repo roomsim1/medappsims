@@ -1,5 +1,4 @@
-console.log("it works");
-
+//Let's the user add patients
 var addPatientForm = document.forms.addPatientForm;
 
 addPatientForm.addEventListener("submit", function(e) {
@@ -12,6 +11,8 @@ function addPatient(e) {
     e.preventDefault();
     var patientUl = document.querySelector("#patient-list");
     var addInput = document.querySelector("#patientName").value;
+    var clearInput = document.querySelector("#patientName").value = "";
+
 
     var patientLi = document.createElement("li");
     var patientBtn = document.createElement("button");
@@ -19,9 +20,12 @@ function addPatient(e) {
     patientBtn.setAttribute("type", "submit");
     patientBtn.setAttribute("value", addInput);
 
-    console.log(addInput);
-
-    patientUl.appendChild(patientLi);
+    if (addInput === "") {
+        alert("Oops, please type in a name.")
+    } else {
+        patientUl.appendChild(patientLi);
+    }
+   
 
     patientArrays.push(addInput);
     console.log(patientArrays);
@@ -29,3 +33,4 @@ function addPatient(e) {
     patientLi.appendChild(patientBtn);
     patientBtn.innerHTML = addInput;
 }
+
