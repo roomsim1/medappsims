@@ -1,5 +1,5 @@
-//Let's the user add patients
-var addPatientForm = document.forms.addPatientForm;
+//Let's the user add times
+var addMedForm = document.forms.addPatientForm;
 
 addPatientForm.addEventListener("submit", function(e) {
     addPatient(e);
