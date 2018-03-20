@@ -1,5 +1,6 @@
 //Let's the user add times
-var addMedForm = document.forms.addTimeForm;
+
+var addTimeForm = document.forms.addTimeForm;
 
 addTimeForm.addEventListener("submit", function(e) {
     addTime(e);
@@ -18,14 +19,14 @@ function addTime(e) {
     var timeBtn = document.createElement("button");
     timeBtn.classList.add("btn", "btn-block", "med-list-button");
     timeBtn.setAttribute("type", "submit",);
-    timeBtn.setAttribute("value", addInput);
+    timeBtn.setAttribute("value", timeInput);
   //  patientBtn.setAttribute("formaction", "users/profile/submit");
   //  patientBtn.setAttribute("formmethod", "post");
   timeForm.setAttribute("action", "users/profile/submit");
     timeForm.setAttribute("method", "post");
 
     if (timeInput === "") {
-        alert("Oops, please type in a name.")
+        alert("Oops, please type in a time.")
     } else {
         timeUl.appendChild(timeLi);
     }
@@ -35,4 +36,5 @@ function addTime(e) {
     timeLi.appendChild(timeForm);
     timeForm.appendChild(timeBtn);
     timeBtn.innerHTML = timeInput;
+
 }
