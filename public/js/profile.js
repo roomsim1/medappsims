@@ -1,38 +1,38 @@
-//Let's the user add patients
-var addPatientForm = document.forms.addPatientForm;
+//Let's the user add times
+var addTimeForm = document.forms.addTimeForm;
 
-addPatientForm.addEventListener("submit", function(e) {
-    addPatient(e);
+addTimeForm.addEventListener("submit", function(e) {
+    addTime(e);
 });
 
-var patientArrays = [];
+var timeArrays = [];
 
-function addPatient(e) {
+function addTime(e) {
     e.preventDefault();
-    var patientUl = document.querySelector("#patient-list");
-    var addInput = document.querySelector("#patientName").value;
-    var clearInput = document.querySelector("#patientName").value = "";
+    var timeUl = document.querySelector("#patient-list");
+    var timeInput = document.querySelector("#patientName").value;
+    var clearTime = document.querySelector("#patientName").value = "";
 
-    var patientLi = document.createElement("li");
-    var patientForm = document.createElement("form");
-    var patientBtn = document.createElement("button");
-    patientBtn.classList.add("btn", "btn-block", "made-patient-btn");
-    patientBtn.setAttribute("type", "submit",);
-    patientBtn.setAttribute("value", addInput);
+    var timeLi = document.createElement("li");
+    var timeForm = document.createElement("form");
+    var timeBtn = document.createElement("button");
+    timeBtn.classList.add("btn", "btn-block", "med-list-button");
+    timeBtn.setAttribute("type", "submit",);
+    timeBtn.setAttribute("value", timeInput);
   //  patientBtn.setAttribute("formaction", "users/profile/submit");
   //  patientBtn.setAttribute("formmethod", "post");
-  patientForm.setAttribute("action", "users/profile/submit");
-    patientForm.setAttribute("method", "post");
+  timeForm.setAttribute("action", "users/profile/submit");
+    timeForm.setAttribute("method", "post");
 
-    if (addInput === "") {
-        alert("Oops, please type in a name.")
+    if (timeInput === "") {
+        alert("Oops, please type in a time.")
     } else {
-        patientUl.appendChild(patientLi);
+        timeUl.appendChild(timeLi);
     }
 
-    patientArrays.push(addInput);
+    timeArrays.push(timeInput);
 
-    patientLi.appendChild(patientForm);
-    patientForm.appendChild(patientBtn);
-    patientBtn.innerHTML = addInput;
+    timeLi.appendChild(timeForm);
+    timeForm.appendChild(timeBtn);
+    timeBtn.innerHTML = timeInput;
 }
