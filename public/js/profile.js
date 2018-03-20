@@ -1,4 +1,5 @@
 //Let's the user add times
+
 var addTimeForm = document.forms.addTimeForm;
 
 addTimeForm.addEventListener("submit", function(e) {
@@ -35,4 +36,5 @@ function addTime(e) {
     timeLi.appendChild(timeForm);
     timeForm.appendChild(timeBtn);
     timeBtn.innerHTML = timeInput;
+
 }
