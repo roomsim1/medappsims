@@ -10,7 +10,7 @@ var timeArrays = [];
 
 function addTime(e) {
     e.preventDefault();
-    var timeUl = document.querySelector("#timeList");
+    var timeUl = document.querySelector("#time-list");
     var timeInput = document.querySelector("#medTime").value;
     var clearTime = document.querySelector("#medTime").value = "";
 
@@ -22,8 +22,8 @@ function addTime(e) {
     timeBtn.setAttribute("value", timeInput);
   //  patientBtn.setAttribute("formaction", "users/profile/submit");
   //  patientBtn.setAttribute("formmethod", "post");
-  timeForm.setAttribute("action", "users/profile/submit");
-    timeForm.setAttribute("method", "post");
+    // timeForm.setAttribute("action", "users/profile/submit");
+    // timeForm.setAttribute("method", "post");
 
     if (timeInput === "") {
         alert("Oops, please type in a time.")
