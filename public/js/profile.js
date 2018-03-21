@@ -1,5 +1,5 @@
 //Let's the user add times
-
+console.log("it works");
 var addTimeForm = document.forms.addTimeForm;
 
 addTimeForm.addEventListener("submit", function(e) {
