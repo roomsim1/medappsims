@@ -15,21 +15,21 @@ router.get('/login', function(req, res){
 	res.render('login');
 });
 
-router.get('/profile', function(req, res){
-	res.render('profile');
-});
+// router.get('/profile', function(req, res){
+// 	res.render('profile');
+// });
 
 
 
 
 // Profile
-router.get('/profile/:id', function(req, res){
-	res.render('profile', {output: req.params.id});
+router.get('/:id', function(req, res){
+	res.render('id', {output: req.params.id});
 });
 
-router.post('/profile/submit', function(req, res){
+router.post('/submit', function(req, res){
 	var id = req.body.id;
-	res.redirect('/users/profile/' + id);
+	res.redirect('/users/' + id);
 });
 
 // Register User

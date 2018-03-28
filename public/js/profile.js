@@ -22,8 +22,8 @@ function addTime(e) {
     timeBtn.setAttribute("value", timeInput);
   //  patientBtn.setAttribute("formaction", "users/profile/submit");
   //  patientBtn.setAttribute("formmethod", "post");
-    // timeForm.setAttribute("action", "users/profile/submit");
-    // timeForm.setAttribute("method", "post");
+    timeForm.setAttribute("action", "users/submit");
+    timeForm.setAttribute("method", "post");
 
     if (timeInput === "") {
         alert("Oops, please type in a time.")
