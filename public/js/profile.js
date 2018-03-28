@@ -20,8 +20,6 @@ function addTime(e) {
     timeBtn.classList.add("btn", "btn-block", "med-list-button");
     timeBtn.setAttribute("type", "submit",);
     timeBtn.setAttribute("value", timeInput);
-  //  patientBtn.setAttribute("formaction", "users/profile/submit");
-  //  patientBtn.setAttribute("formmethod", "post");
     timeForm.setAttribute("action", "users/submit");
     timeForm.setAttribute("method", "post");
 
